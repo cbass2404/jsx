@@ -3,14 +3,16 @@ import ReactDOM from "react-dom";
 
 // create a react component
 const App = () => {
+    const buttonText = { text: "Click me" };
+
     return (
         <div>
-            <label class="label" for="name">
+            <label className="label" htmlFor="name">
                 Enter Name:
             </label>
             <input id="name" type="text" />
             <button style={{ backgroundColor: "blue", color: "white" }}>
-                Submit
+                {buttonText.text}
             </button>
         </div>
     );
